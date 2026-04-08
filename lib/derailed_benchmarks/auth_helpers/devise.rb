@@ -15,7 +15,7 @@ module DerailedBenchmarks
           require 'devise'
           require 'warden'
           extend ::Warden::Test::Helpers
-          extend ::Devise::TestHelpers
+          extend ::Devise::Test::ControllerHelpers
           Warden.test_mode!
         # end
       end
